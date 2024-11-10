@@ -92,6 +92,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Pokemon TCG Pocket in Microlaunch](https://microlaunch.net/p/pokemontcgpocket)
 - [Pokemon TCG Pocket in AlternativeTo](https://alternativeto.net/software/pokemon-tcg-pocket/about/)
 - [Pokemon TCG Pocket in ToolPilot](https://www.toolpilot.ai/products/pokemon-tcg-pocket)
+- [Pokemon TCG Pocket in BaiTools](https://bai.tools/tools/pokemon-tcg-pocket)
+- [Pokemon TCG Pocket in AI Center](https://aicenter.ai/products/pokemon-tcg%C2%A0pocket)
 
 ---
 
