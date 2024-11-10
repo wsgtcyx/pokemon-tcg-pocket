@@ -88,6 +88,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Pokemon TCG Pocket in Fazier](https://fazier.com/launches/pokemon-tcg-pocket-2)
 - [Pokemon TCG Pocket in Dev.to](https://dev.to/yxchen1994/pokemon-tcg-pocket-hub-5enm)
 - [Pokemon TCG Pocket in Sourceforge](https://sourceforge.net/projects/pokemon-tcg-pocket/)
+- [Pokemon TCG Pocket in Ben's Bites](https://news.bensbites.com/posts/30200-pokemon-tcg-pocket-your-ultimate-pokemon-card-game-resource-simulator-hub?utm_campaign=social&utm_content=post_30200&utm_id=post_30200&utm_medium=share&utm_source=twitter)
 
 ---
 
