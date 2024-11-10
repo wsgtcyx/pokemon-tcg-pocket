@@ -90,6 +90,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Pokemon TCG Pocket in Sourceforge](https://sourceforge.net/projects/pokemon-tcg-pocket/)
 - [Pokemon TCG Pocket in Ben's Bites](https://news.bensbites.com/posts/30200-pokemon-tcg-pocket-your-ultimate-pokemon-card-game-resource-simulator-hub?utm_campaign=social&utm_content=post_30200&utm_id=post_30200&utm_medium=share&utm_source=twitter)
 - [Pokemon TCG Pocket in Microlaunch](https://microlaunch.net/p/pokemontcgpocket)
+- [Pokemon TCG Pocket in AlternativeTo](https://alternativeto.net/software/pokemon-tcg-pocket/about/)
 
 ---
 
