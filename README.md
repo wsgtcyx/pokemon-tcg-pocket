@@ -83,6 +83,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Other Resources
 - [Pokemon TCG Pocket in Linktree](https://linktr.ee/yxchen1994)
 - [Pokemon TCG Pocket in Devpost](https://devpost.com/software/pokemon-tcg-pocket)
+- [Pokemon TCG Pocket in IMDb](https://www.imdb.com/user/ur183345639)
 
 ---
 
