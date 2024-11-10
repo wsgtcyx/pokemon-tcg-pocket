@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon TCG Pocket | Free Online Trading Card Pocket Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f8fafc;
+        }
+
+        header {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(41, 128, 185, 0.3);
+        }
+
+        .language-selector {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .language-selector button {
+            padding: 0.5rem 1rem;
+            border: none;
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #3498db;
+        }
+
+        .language-selector button:hover {
+            background: #3498db;
+            color: white;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: white;
+            border-bottom: 1px solid #e1e8ed;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(41, 128, 185, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .download-button {
+            padding: 1rem 2rem;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .download-button:hover {
+            background: #2980b9;
+        }
+
+        .card-showcase {
+            padding: 3rem 2rem;
+            background: white;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(41, 128, 185, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .how-to-play {
+            padding: 3rem 2rem;
+            background: #f8fafc;
+        }
+
+        .steps {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .step {
+            margin: 1rem 0;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(41, 128, 185, 0.1);
+        }
+
+        .step h3 {
+            color: #3498db;
+            margin-bottom: 0.5rem;
+        }
+
+        .meta-guide {
+            padding: 2rem;
+            background: white;
+            text-align: center;
+        }
+
+        .testimonials {
+            padding: 3rem 2rem;
+            background: #f8fafc;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(41, 128, 185, 0.1);
+        }
+
+        .timeline {
+            padding: 3rem 2rem;
+            background: white;
+        }
+
+        .timeline-item {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(41, 128, 185, 0.1);
+        }
+
+        .faq {
+            padding: 3rem 2rem;
+            background: #f8fafc;
+        }
+
+        .faq-item {
+            max-width: 800px;
+            margin: 1rem auto;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(41, 128, 185, 0.1);
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .cards-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pokemon TCG Pocket</h1>
+        <div class="language-selector">
+            <button>English</button>
+            <button>繁體中文</button>
+            <button>Français</button>
+            <button>Español</button>
+            <button>Italiano</button>
+            <button>粵語</button>
+            <button>Português</button>
+            <button>Deutsch</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>The Pokemon Trading Card Game Pocket Experience</h1>
+        <div class="features">
+            <div class="feature-card">
+                <h3>🎮 Quick and easy gameplay on the go</h3>
+                <p>Jump into exciting Pokemon battles with streamlined mechanics. Perfect for quick gaming sessions whether you're commuting or taking a break.</p>
+            </div>
+            <div class="feature-card">
+                <h3>✨ Build your own deck</h3>
+                <p>Create unique strategies with Pokemon, Trainer, and Energy cards. Design powerful combinations to outmaneuver your opponents.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎲 FREE Daily Boosters</h3>
+                <p>Open two FREE booster packs daily and earn new cards through victories and missions. Expand your collection continuously!</p>
+            </div>
+            <div class="feature-card">
+                <h3>🌍 Global Battles</h3>
+                <p>Challenge players worldwide in real-time matches. Test your skills against the global Pokemon TCG Pocket community.</p>
+            </div>
+        </div>
+
+        <div class="download-buttons">
+            <a href="#" class="download-button">📱 Download on App Store</a>
+            <a href="#" class="download-button">🤖 Get it on Google Play</a>
+        </div>
+    </section>
+
+    <section class="meta-guide">
+        <h2 class="section-title">Current Meta Guide - November 2024</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Articuno ex Deck</h3>
+                <p>Top tier strategy guide</p>
+            </div>
+            <div class="card">
+                <h3>Dragonite Deck</h3>
+                <p>Damage-focused build</p>
+            </div>
+            <div class="card">
+                <h3>Mewtwo EX Deck</h3>
+                <p>Best competitive strategy</p>
+            </div>
+            <div class="card">
+                <h3>Pikachu EX Deck</h3>
+                <p>Electric-type mastery</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-to-play">
+        <h2 class="section-title">How To Play Pokemon TCG Pocket</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>1. Build Your Deck</h3>
+                <p>Create a balanced 60-card deck with:</p>
+                <ul>
+                    <li>Pokemon cards (20-25 cards)</li>
+                    <li>Energy cards (15-20 cards)</li>
+                    <li>Trainer cards (15-20 cards)</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h3>2. Learn Game Flow</h3>
+                <p>Master the turn phases:</p>
+                <ul>
+                    <li>Draw a card</li>
+                    <li>Attach one Energy card</li>
+                    <li>Evolve Pokemon</li>
+                    <li>Play Trainer cards</li>
+                    <li>Attack with active Pokemon</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h3>3. Master Battles</h3>
+                <p>Win by:</p>
+                <ul>
+                    <li>Defeating opponent's Pokemon</li>
+                    <li>Collecting prize cards</li>
+                    <li>Using type advantages</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h3>4. Grow Stronger</h3>
+                <p>Expand your collection through:</p>
+                <ul>
+                    <li>Daily free booster packs</li>
+                    <li>Battle rewards</li>
+                    <li>Special events</li>
+                    <li>Wonder Pick challenges</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2 class="section-title">Player Testimonials</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"Love the daily free packs! Opening two booster packs every day keeps me excited to check in. The 3D card effects are absolutely stunning!"</p>
+                <p>- Emma S., New York, USA</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"The streamlined battle system is perfect for mobile. I can enjoy quick matches during my breaks without compromising on strategy."</p>
+                <p>- David K., Berlin, Germany</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Being able to collect cards in different languages adds an exciting dimension to collecting. It's like a worldwide Pokemon card adventure!"</p>
+                <p>- Sophie M., Paris, France</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline">
+        <h2 class="section-title">The Evolution of Pokemon TCG Pocket</h2>
+        <div class="timeline-item">
+            <h3>1996: The Birth of Pokemon TCG</h3>
+            <p>The Pokemon Trading Card Game debuted, laying the foundation for what would become Pokemon TCG Pocket.</p>
+        </div>
+        <div class="timeline-item">
+            <h3>1996-2023: Global Growth</h3>
+            <p>Pokemon TCG expanded to 14 languages across 89 countries, inspiring the development of TCG Pocket.</p>
+        </div>
+        <div class="timeline-item">
+            <h3>2024: The TCG Pocket Revolution</h3>
+            <p>Launch of Pokemon TCG Pocket, revolutionizing the traditional card game for the digital age.</p>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What makes Pokemon TCG Pocket unique?</h3>
+            <p>Streamlined mobile gameplay, daily free boosters, and innovative Wonder Pick challenges make collecting and battling more accessible than ever.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I start playing?</h3>
+            <p>Download the app, complete the tutorial, and start collecting cards with your daily free booster packs. Join practice matches to learn the basics.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I play with friends?</h3>
+            <p>Yes! Challenge friends to battles, trade cards, and participate in Wonder Pick challenges together.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>©2024 Pokemon TCG Pocket - Developed by Creatures Inc. and DeNA Co., Ltd.</p>
+        <div class="footer-links">
+            <a href="#">Support</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+</body>
+</html>
