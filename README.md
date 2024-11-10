@@ -79,6 +79,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - [Official Pokemon TCG Pocket Website](https://pokemontcgpocket.app)
 
+
+## Other Resources
+- [Pokemon TCG Pocket in Linktree](https://linktr.ee/yxchen1994)
+
 ---
 
 *Pokemon TCG Pocket Hub - Your Ultimate Resource for Pokemon Trading Card Game Pocket*
