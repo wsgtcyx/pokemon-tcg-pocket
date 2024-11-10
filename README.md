@@ -87,6 +87,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Pokemon TCG Pocket in PromoteProject](https://www.promoteproject.com/startup/175693/pokemon-tcg-pocket)
 - [Pokemon TCG Pocket in Fazier](https://fazier.com/launches/pokemon-tcg-pocket-2)
 - [Pokemon TCG Pocket in Dev.to](https://dev.to/yxchen1994/pokemon-tcg-pocket-hub-5enm)
+- [Pokemon TCG Pocket in Sourceforge](https://sourceforge.net/projects/pokemon-tcg-pocket/)
 
 ---
 
