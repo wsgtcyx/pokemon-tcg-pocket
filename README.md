@@ -95,6 +95,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Pokemon TCG Pocket in BaiTools](https://bai.tools/tools/pokemon-tcg-pocket)
 - [Pokemon TCG Pocket in AI Center](https://aicenter.ai/products/pokemon-tcg%C2%A0pocket)
 - [Pokemon TCG Pocket in Saashub](https://www.saashub.com/pokemon-tcg-online-alternatives)
+- [Pokemon TCG Pocket in Hacker News](https://news.ycombinator.com/item?id=42099646)   
+
 
 ---
 
