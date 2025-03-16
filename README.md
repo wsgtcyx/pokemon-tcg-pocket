@@ -2,6 +2,9 @@
 
 The ultimate resource center and simulator for Pokemon Trading Card Game Pocket, featuring comprehensive deck guides, card database, and live card drawing experience.
 
+## Visit Now!
+- [Pokemon TCG Pocket Hub](https://pokemontcgpocket.app)
+
 ## 🎮 Features
 
 ### Interactive Card Simulator
